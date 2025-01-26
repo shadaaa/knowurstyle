@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dress Generator</title>
+    <!-- Bootstrap CDN for styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: radial-gradient(rgb(222, 223, 215),rgb(32, 125, 119));
+            /* background-color: #333; */
+
+        }
+        .container {
+            max-width: 800px;
+            margin-top: 50px;
+        }
+        .card {
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn-custom {
+            background-color: #5bc0de;
+            color: white;
+        }
+        .btn-custom:hover {
+            background-color: #31a2b8;
+        }
+        h1 {
+            color: #333;
+        }
+        .lead {
+            font-size: 1.2rem;
+            color: #555;
+        }
+        .card-body {
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="text-center">Welcome to the Dress Design Generator</h1>
+                <p class="lead text-center">Use the link below to generate your own dress designs using AI.</p>
+                <div class="text-center mt-4">
+                    <a href="{% url 'generate_dress' %}" class="btn btn-custom btn-lg">Generate Dress</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (optional, if you need to use any Bootstrap features that require JavaScript) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
